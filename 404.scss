@@ -1,0 +1,97 @@
+@charset "utf-8";// Alt der gælder for mobil og højere
+
+* { // Gælder alt på hele siden
+  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+}
+
+body {
+  margin: 0;
+  background-image: url("images/404.jpg");
+  background-size: cover;
+  *background-position: center center;
+  *background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 60pt;
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30pt;
+  font-family: "Century Gothic";
+}
+
+h3 {
+  font-size: 18pt;
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+
+p {
+  font-size: 16pt;
+  line-height: 24pt;
+  font-family: "lato";
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+ul, ol {
+  margin: 0; // Ingen ydre margen fra lister
+  padding: 0; // Ingen indre margen fra lister
+  list-style-position: inside; // List punkter står på linje
+}
+
+li {
+  margin: 0; // Ingen ydre margen fra listpunkter
+}
+
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
+
+a:hover{
+  color: #fad24b;
+  text-decoration: none;
+}
+
+a {
+  color: #99c172;
+  text-decoration: none;
+}
+
+.fejlknap {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  margin-top: 50%;
+  letter-spacing: 3px;
+  *position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  // TABLET STÅENDE
+}
+
+@media screen and (min-width: 992px) {
+  // TABLET LIGGENDE
+}
+
+@media screen and (min-width: 1200px) {
+  // COMPUTER WEB
+}
+
+@media print {
+  // Alt der gælder for print specifikt
+}
